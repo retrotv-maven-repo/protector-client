@@ -1,0 +1,473 @@
+[36m2023/07/23 15:33:20.602[m [33m[WARN ][m [io.netty.channel.DefaultChannelPipeline] [33m[nioEventLoopGroup-2-1][m - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 4
+	at dev.retrotv.protector.client.netty.NettyClientHandler.sendMsg(NettyClientHandler.java:73) ~[main/:?]
+	at dev.retrotv.protector.client.netty.NettyClientHandler.channelRead(NettyClientHandler.java:55) ~[main/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[36m2023/07/23 15:33:20.612[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:40.330[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:40.339[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료
+[36m2023/07/23 15:41:49.474[m [34m[DEBUG][m [io.netty.util.internal.logging.InternalLoggerFactory] [33m[Test worker][m - Using Log4J2 as the default logging framework
+[36m2023/07/23 15:41:49.480[m [34m[DEBUG][m [io.netty.channel.MultithreadEventLoopGroup] [33m[Test worker][m - -Dio.netty.eventLoopThreads: 16
+[36m2023/07/23 15:41:49.483[m [34m[DEBUG][m [io.netty.util.concurrent.GlobalEventExecutor] [33m[Test worker][m - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[36m2023/07/23 15:41:49.486[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[36m2023/07/23 15:41:49.486[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[36m2023/07/23 15:41:49.493[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - -Dio.netty.noUnsafe: false
+[36m2023/07/23 15:41:49.493[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - Java version: 17
+[36m2023/07/23 15:41:49.494[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.theUnsafe: available
+[36m2023/07/23 15:41:49.494[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.copyMemory: available
+[36m2023/07/23 15:41:49.494[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.storeFence: available
+[36m2023/07/23 15:41:49.494[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Buffer.address: available
+[36m2023/07/23 15:41:49.495[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[36m2023/07/23 15:41:49.495[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Bits.unaligned: available, true
+[36m2023/07/23 15:41:49.495[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @41e77c24
+[36m2023/07/23 15:41:49.496[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[36m2023/07/23 15:41:49.496[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - sun.misc.Unsafe: available
+[36m2023/07/23 15:41:49.496[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - maxDirectMemory: 536870912 bytes (maybe)
+[36m2023/07/23 15:41:49.497[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.tmpdir: /var/folders/fx/d3rxksdd2ydd9lkjnqhyqn440000gn/T (java.io.tmpdir)
+[36m2023/07/23 15:41:49.497[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[36m2023/07/23 15:41:49.497[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - Platform: MacOS
+[36m2023/07/23 15:41:49.497[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.maxDirectMemory: -1 bytes
+[36m2023/07/23 15:41:49.497[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[36m2023/07/23 15:41:49.498[m [34m[DEBUG][m [io.netty.util.internal.CleanerJava9] [33m[Test worker][m - java.nio.ByteBuffer.cleaner(): available
+[36m2023/07/23 15:41:49.498[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.noPreferDirect: false
+[36m2023/07/23 15:41:49.498[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.noKeySetOptimization: false
+[36m2023/07/23 15:41:49.498[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.selectorAutoRebuildThreshold: 512
+[36m2023/07/23 15:41:49.501[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent$Mpsc] [33m[Test worker][m - org.jctools-core.MpscChunkedArrayQueue: available
+[36m2023/07/23 15:41:49.503[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty address: 127.0.0.1
+[36m2023/07/23 15:41:49.504[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty port: 8888
+[36m2023/07/23 15:41:49.504[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Message size: 4
+[36m2023/07/23 15:41:49.508[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Bootstrap 생성
+[36m2023/07/23 15:41:49.512[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.processId: 10697 (auto-detected)
+[36m2023/07/23 15:41:49.513[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv4Stack: false
+[36m2023/07/23 15:41:49.513[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv6Addresses: false
+[36m2023/07/23 15:41:49.516[m [34m[DEBUG][m [io.netty.util.NetUtilInitializations] [33m[Test worker][m - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[36m2023/07/23 15:41:49.516[m [34m[DEBUG][m [io.netty.util.NetUtil$SoMaxConnAction] [33m[Test worker][m - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[36m2023/07/23 15:41:49.517[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.machineId: 1c:57:dc:ff:fe:70:c0:68 (auto-detected)
+[36m2023/07/23 15:41:49.521[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.level: simple
+[36m2023/07/23 15:41:49.521[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.targetRecords: 4
+[36m2023/07/23 15:41:49.528[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numHeapArenas: 16
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numDirectArenas: 16
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.pageSize: 8192
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxOrder: 9
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.chunkSize: 4194304
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.smallCacheSize: 256
+[36m2023/07/23 15:41:49.529[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.normalCacheSize: 64
+[36m2023/07/23 15:41:49.530[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[36m2023/07/23 15:41:49.530[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimInterval: 8192
+[36m2023/07/23 15:41:49.530[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[36m2023/07/23 15:41:49.530[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.useCacheForAllThreads: false
+[36m2023/07/23 15:41:49.530[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[36m2023/07/23 15:41:49.534[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.allocator.type: pooled
+[36m2023/07/23 15:41:49.534[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.threadLocalDirectBufferSize: 0
+[36m2023/07/23 15:41:49.534[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[36m2023/07/23 15:41:49.539[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 등록
+[36m2023/07/23 15:41:49.540[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 접속 완료
+[36m2023/07/23 15:41:49.543[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkAccessible: true
+[36m2023/07/23 15:41:49.543[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkBounds: true
+[36m2023/07/23 15:41:49.544[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory] [33m[nioEventLoopGroup-2-1][m - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1eb9ee10
+[36m2023/07/23 15:41:49.546[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[36m2023/07/23 15:41:49.546[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.ratio: 8
+[36m2023/07/23 15:41:49.546[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.chunkSize: 32
+[36m2023/07/23 15:41:49.546[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.blocking: false
+[36m2023/07/23 15:41:49.546[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[36m2023/07/23 15:41:49.550[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Hello! 
+[36m2023/07/23 15:41:49.562[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:41:49.562[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 1
+[36m2023/07/23 15:41:49.563[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > This 
+[36m2023/07/23 15:41:49.563[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:49.563[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:41:49.563[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 2
+[36m2023/07/23 15:41:49.564[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > is 
+[36m2023/07/23 15:41:49.564[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:49.564[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:41:49.564[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 3
+[36m2023/07/23 15:41:49.564[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Message!
+[36m2023/07/23 15:41:49.564[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:49.565[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:41:49.565[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 4
+[36m2023/07/23 15:41:49.568[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:49.569[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:41:49.570[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료
+[36m2023/07/23 15:44:41.274[m [34m[DEBUG][m [io.netty.util.internal.logging.InternalLoggerFactory] [33m[Test worker][m - Using Log4J2 as the default logging framework
+[36m2023/07/23 15:44:41.279[m [34m[DEBUG][m [io.netty.channel.MultithreadEventLoopGroup] [33m[Test worker][m - -Dio.netty.eventLoopThreads: 16
+[36m2023/07/23 15:44:41.282[m [34m[DEBUG][m [io.netty.util.concurrent.GlobalEventExecutor] [33m[Test worker][m - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[36m2023/07/23 15:44:41.285[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[36m2023/07/23 15:44:41.285[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[36m2023/07/23 15:44:41.293[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - -Dio.netty.noUnsafe: false
+[36m2023/07/23 15:44:41.294[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - Java version: 17
+[36m2023/07/23 15:44:41.294[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.theUnsafe: available
+[36m2023/07/23 15:44:41.294[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.copyMemory: available
+[36m2023/07/23 15:44:41.295[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.storeFence: available
+[36m2023/07/23 15:44:41.295[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Buffer.address: available
+[36m2023/07/23 15:44:41.295[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[36m2023/07/23 15:44:41.295[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Bits.unaligned: available, true
+[36m2023/07/23 15:44:41.296[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @41e77c24
+[36m2023/07/23 15:44:41.296[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[36m2023/07/23 15:44:41.296[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - sun.misc.Unsafe: available
+[36m2023/07/23 15:44:41.297[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - maxDirectMemory: 536870912 bytes (maybe)
+[36m2023/07/23 15:44:41.297[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.tmpdir: /var/folders/fx/d3rxksdd2ydd9lkjnqhyqn440000gn/T (java.io.tmpdir)
+[36m2023/07/23 15:44:41.297[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[36m2023/07/23 15:44:41.298[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - Platform: MacOS
+[36m2023/07/23 15:44:41.298[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.maxDirectMemory: -1 bytes
+[36m2023/07/23 15:44:41.298[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[36m2023/07/23 15:44:41.298[m [34m[DEBUG][m [io.netty.util.internal.CleanerJava9] [33m[Test worker][m - java.nio.ByteBuffer.cleaner(): available
+[36m2023/07/23 15:44:41.299[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.noPreferDirect: false
+[36m2023/07/23 15:44:41.299[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.noKeySetOptimization: false
+[36m2023/07/23 15:44:41.299[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.selectorAutoRebuildThreshold: 512
+[36m2023/07/23 15:44:41.302[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent$Mpsc] [33m[Test worker][m - org.jctools-core.MpscChunkedArrayQueue: available
+[36m2023/07/23 15:44:41.304[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty address: 127.0.0.1
+[36m2023/07/23 15:44:41.304[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty port: 8888
+[36m2023/07/23 15:44:41.305[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Message size: 4
+[36m2023/07/23 15:44:41.309[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Bootstrap 생성
+[36m2023/07/23 15:44:41.313[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.processId: 10702 (auto-detected)
+[36m2023/07/23 15:44:41.315[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv4Stack: false
+[36m2023/07/23 15:44:41.315[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv6Addresses: false
+[36m2023/07/23 15:44:41.317[m [34m[DEBUG][m [io.netty.util.NetUtilInitializations] [33m[Test worker][m - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[36m2023/07/23 15:44:41.318[m [34m[DEBUG][m [io.netty.util.NetUtil$SoMaxConnAction] [33m[Test worker][m - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[36m2023/07/23 15:44:41.318[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.machineId: 1c:57:dc:ff:fe:70:c0:68 (auto-detected)
+[36m2023/07/23 15:44:41.322[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.level: simple
+[36m2023/07/23 15:44:41.322[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.targetRecords: 4
+[36m2023/07/23 15:44:41.331[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numHeapArenas: 16
+[36m2023/07/23 15:44:41.331[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numDirectArenas: 16
+[36m2023/07/23 15:44:41.331[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.pageSize: 8192
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxOrder: 9
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.chunkSize: 4194304
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.smallCacheSize: 256
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.normalCacheSize: 64
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimInterval: 8192
+[36m2023/07/23 15:44:41.332[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[36m2023/07/23 15:44:41.333[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.useCacheForAllThreads: false
+[36m2023/07/23 15:44:41.333[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[36m2023/07/23 15:44:41.336[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.allocator.type: pooled
+[36m2023/07/23 15:44:41.337[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.threadLocalDirectBufferSize: 0
+[36m2023/07/23 15:44:41.337[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[36m2023/07/23 15:44:41.341[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 등록
+[36m2023/07/23 15:44:41.342[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 접속 완료
+[36m2023/07/23 15:44:41.345[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkAccessible: true
+[36m2023/07/23 15:44:41.345[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkBounds: true
+[36m2023/07/23 15:44:41.346[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory] [33m[nioEventLoopGroup-2-1][m - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6d5bfc35
+[36m2023/07/23 15:44:41.347[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[36m2023/07/23 15:44:41.347[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.ratio: 8
+[36m2023/07/23 15:44:41.347[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.chunkSize: 32
+[36m2023/07/23 15:44:41.347[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.blocking: false
+[36m2023/07/23 15:44:41.347[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[36m2023/07/23 15:44:41.351[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Hello! 
+[36m2023/07/23 15:44:41.353[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:44:41.353[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 1
+[36m2023/07/23 15:44:41.353[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > This 
+[36m2023/07/23 15:44:41.354[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:44:41.354[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:44:41.354[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 2
+[36m2023/07/23 15:44:41.354[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > is 
+[36m2023/07/23 15:44:41.354[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:44:41.355[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:44:41.355[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 3
+[36m2023/07/23 15:44:41.355[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Message!
+[36m2023/07/23 15:44:41.355[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:44:41.355[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:44:41.355[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 4
+[36m2023/07/23 15:44:41.356[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > !CLOSE
+[36m2023/07/23 15:44:41.356[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:44:41.356[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:44:41.357[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료
+[36m2023/07/23 15:49:53.953[m [34m[DEBUG][m [io.netty.util.internal.logging.InternalLoggerFactory] [33m[Test worker][m - Using Log4J2 as the default logging framework
+[36m2023/07/23 15:49:53.959[m [34m[DEBUG][m [io.netty.channel.MultithreadEventLoopGroup] [33m[Test worker][m - -Dio.netty.eventLoopThreads: 16
+[36m2023/07/23 15:49:53.963[m [34m[DEBUG][m [io.netty.util.concurrent.GlobalEventExecutor] [33m[Test worker][m - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[36m2023/07/23 15:49:53.966[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[36m2023/07/23 15:49:53.966[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[36m2023/07/23 15:49:53.974[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - -Dio.netty.noUnsafe: false
+[36m2023/07/23 15:49:53.974[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - Java version: 17
+[36m2023/07/23 15:49:53.974[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.theUnsafe: available
+[36m2023/07/23 15:49:53.975[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.copyMemory: available
+[36m2023/07/23 15:49:53.975[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.storeFence: available
+[36m2023/07/23 15:49:53.975[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Buffer.address: available
+[36m2023/07/23 15:49:53.975[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[36m2023/07/23 15:49:53.976[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Bits.unaligned: available, true
+[36m2023/07/23 15:49:53.976[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @41e77c24
+[36m2023/07/23 15:49:53.977[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[36m2023/07/23 15:49:53.977[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - sun.misc.Unsafe: available
+[36m2023/07/23 15:49:53.977[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - maxDirectMemory: 536870912 bytes (maybe)
+[36m2023/07/23 15:49:53.978[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.tmpdir: /var/folders/fx/d3rxksdd2ydd9lkjnqhyqn440000gn/T (java.io.tmpdir)
+[36m2023/07/23 15:49:53.978[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[36m2023/07/23 15:49:53.978[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - Platform: MacOS
+[36m2023/07/23 15:49:53.978[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.maxDirectMemory: -1 bytes
+[36m2023/07/23 15:49:53.979[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[36m2023/07/23 15:49:53.979[m [34m[DEBUG][m [io.netty.util.internal.CleanerJava9] [33m[Test worker][m - java.nio.ByteBuffer.cleaner(): available
+[36m2023/07/23 15:49:53.979[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.noPreferDirect: false
+[36m2023/07/23 15:49:53.979[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.noKeySetOptimization: false
+[36m2023/07/23 15:49:53.980[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.selectorAutoRebuildThreshold: 512
+[36m2023/07/23 15:49:53.982[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent$Mpsc] [33m[Test worker][m - org.jctools-core.MpscChunkedArrayQueue: available
+[36m2023/07/23 15:49:53.985[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty address: 127.0.0.1
+[36m2023/07/23 15:49:53.985[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty port: 8888
+[36m2023/07/23 15:49:53.985[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Message size: 4
+[36m2023/07/23 15:49:53.990[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Bootstrap 생성
+[36m2023/07/23 15:49:53.994[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.processId: 10727 (auto-detected)
+[36m2023/07/23 15:49:53.995[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv4Stack: false
+[36m2023/07/23 15:49:53.996[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv6Addresses: false
+[36m2023/07/23 15:49:53.998[m [34m[DEBUG][m [io.netty.util.NetUtilInitializations] [33m[Test worker][m - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[36m2023/07/23 15:49:53.999[m [34m[DEBUG][m [io.netty.util.NetUtil$SoMaxConnAction] [33m[Test worker][m - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[36m2023/07/23 15:49:54.000[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.machineId: 1c:57:dc:ff:fe:70:c0:68 (auto-detected)
+[36m2023/07/23 15:49:54.004[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.level: simple
+[36m2023/07/23 15:49:54.004[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.targetRecords: 4
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numHeapArenas: 16
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numDirectArenas: 16
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.pageSize: 8192
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxOrder: 9
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.chunkSize: 4194304
+[36m2023/07/23 15:49:54.012[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.smallCacheSize: 256
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.normalCacheSize: 64
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimInterval: 8192
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.useCacheForAllThreads: false
+[36m2023/07/23 15:49:54.013[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[36m2023/07/23 15:49:54.017[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.allocator.type: pooled
+[36m2023/07/23 15:49:54.017[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.threadLocalDirectBufferSize: 0
+[36m2023/07/23 15:49:54.018[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[36m2023/07/23 15:49:54.022[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 등록
+[36m2023/07/23 15:49:54.023[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 접속 완료
+[36m2023/07/23 15:49:54.026[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkAccessible: true
+[36m2023/07/23 15:49:54.026[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkBounds: true
+[36m2023/07/23 15:49:54.027[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory] [33m[nioEventLoopGroup-2-1][m - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6d5bfc35
+[36m2023/07/23 15:49:54.028[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[36m2023/07/23 15:49:54.028[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.ratio: 8
+[36m2023/07/23 15:49:54.029[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.chunkSize: 32
+[36m2023/07/23 15:49:54.029[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.blocking: false
+[36m2023/07/23 15:49:54.029[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[36m2023/07/23 15:49:54.032[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Hello! 
+[36m2023/07/23 15:49:54.037[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:49:54.037[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:49:54.037[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 1
+[36m2023/07/23 15:49:54.037[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > This 
+[36m2023/07/23 15:49:54.038[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:49:54.038[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:49:54.038[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:49:54.038[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 2
+[36m2023/07/23 15:49:54.038[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > is 
+[36m2023/07/23 15:49:54.038[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:49:54.039[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:49:54.039[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:49:54.039[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 3
+[36m2023/07/23 15:49:54.039[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Message!
+[36m2023/07/23 15:49:54.039[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:49:54.040[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:49:54.040[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:49:54.040[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 4
+[36m2023/07/23 15:49:54.040[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > !CLOSE
+[36m2023/07/23 15:49:54.040[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:49:54.041[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:49:54.042[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료
+[36m2023/07/23 15:54:33.491[m [34m[DEBUG][m [io.netty.util.internal.logging.InternalLoggerFactory] [33m[Test worker][m - Using Log4J2 as the default logging framework
+[36m2023/07/23 15:54:33.496[m [34m[DEBUG][m [io.netty.channel.MultithreadEventLoopGroup] [33m[Test worker][m - -Dio.netty.eventLoopThreads: 16
+[36m2023/07/23 15:54:33.499[m [34m[DEBUG][m [io.netty.util.concurrent.GlobalEventExecutor] [33m[Test worker][m - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[36m2023/07/23 15:54:33.502[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[36m2023/07/23 15:54:33.502[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[36m2023/07/23 15:54:33.510[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - -Dio.netty.noUnsafe: false
+[36m2023/07/23 15:54:33.510[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - Java version: 17
+[36m2023/07/23 15:54:33.510[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.theUnsafe: available
+[36m2023/07/23 15:54:33.511[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.copyMemory: available
+[36m2023/07/23 15:54:33.511[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.storeFence: available
+[36m2023/07/23 15:54:33.511[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Buffer.address: available
+[36m2023/07/23 15:54:33.511[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[36m2023/07/23 15:54:33.512[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Bits.unaligned: available, true
+[36m2023/07/23 15:54:33.512[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @41e77c24
+[36m2023/07/23 15:54:33.513[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[36m2023/07/23 15:54:33.513[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - sun.misc.Unsafe: available
+[36m2023/07/23 15:54:33.513[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - maxDirectMemory: 536870912 bytes (maybe)
+[36m2023/07/23 15:54:33.513[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.tmpdir: /var/folders/fx/d3rxksdd2ydd9lkjnqhyqn440000gn/T (java.io.tmpdir)
+[36m2023/07/23 15:54:33.514[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[36m2023/07/23 15:54:33.514[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - Platform: MacOS
+[36m2023/07/23 15:54:33.514[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.maxDirectMemory: -1 bytes
+[36m2023/07/23 15:54:33.514[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[36m2023/07/23 15:54:33.515[m [34m[DEBUG][m [io.netty.util.internal.CleanerJava9] [33m[Test worker][m - java.nio.ByteBuffer.cleaner(): available
+[36m2023/07/23 15:54:33.515[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.noPreferDirect: false
+[36m2023/07/23 15:54:33.515[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.noKeySetOptimization: false
+[36m2023/07/23 15:54:33.515[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.selectorAutoRebuildThreshold: 512
+[36m2023/07/23 15:54:33.518[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent$Mpsc] [33m[Test worker][m - org.jctools-core.MpscChunkedArrayQueue: available
+[36m2023/07/23 15:54:33.520[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty address: 127.0.0.1
+[36m2023/07/23 15:54:33.520[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty port: 8888
+[36m2023/07/23 15:54:33.521[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Message size: 4
+[36m2023/07/23 15:54:33.525[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Bootstrap 생성
+[36m2023/07/23 15:54:33.529[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.processId: 10791 (auto-detected)
+[36m2023/07/23 15:54:33.530[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv4Stack: false
+[36m2023/07/23 15:54:33.531[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv6Addresses: false
+[36m2023/07/23 15:54:33.533[m [34m[DEBUG][m [io.netty.util.NetUtilInitializations] [33m[Test worker][m - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[36m2023/07/23 15:54:33.533[m [34m[DEBUG][m [io.netty.util.NetUtil$SoMaxConnAction] [33m[Test worker][m - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[36m2023/07/23 15:54:33.534[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.machineId: 1c:57:dc:ff:fe:70:c0:68 (auto-detected)
+[36m2023/07/23 15:54:33.538[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.level: simple
+[36m2023/07/23 15:54:33.538[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.targetRecords: 4
+[36m2023/07/23 15:54:33.546[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numHeapArenas: 16
+[36m2023/07/23 15:54:33.546[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numDirectArenas: 16
+[36m2023/07/23 15:54:33.546[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.pageSize: 8192
+[36m2023/07/23 15:54:33.546[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxOrder: 9
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.chunkSize: 4194304
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.smallCacheSize: 256
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.normalCacheSize: 64
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimInterval: 8192
+[36m2023/07/23 15:54:33.547[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[36m2023/07/23 15:54:33.548[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.useCacheForAllThreads: false
+[36m2023/07/23 15:54:33.548[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[36m2023/07/23 15:54:33.552[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.allocator.type: pooled
+[36m2023/07/23 15:54:33.552[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.threadLocalDirectBufferSize: 0
+[36m2023/07/23 15:54:33.552[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[36m2023/07/23 15:54:33.556[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 등록
+[36m2023/07/23 15:54:33.557[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 접속 완료
+[36m2023/07/23 15:54:33.560[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkAccessible: true
+[36m2023/07/23 15:54:33.561[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkBounds: true
+[36m2023/07/23 15:54:33.561[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory] [33m[nioEventLoopGroup-2-1][m - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1eb9ee10
+[36m2023/07/23 15:54:33.563[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[36m2023/07/23 15:54:33.563[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.ratio: 8
+[36m2023/07/23 15:54:33.563[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.chunkSize: 32
+[36m2023/07/23 15:54:33.563[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.blocking: false
+[36m2023/07/23 15:54:33.563[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[36m2023/07/23 15:54:33.567[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Hello! 
+[36m2023/07/23 15:54:33.584[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:54:33.584[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:54:33.584[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 1
+[36m2023/07/23 15:54:33.585[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > This 
+[36m2023/07/23 15:54:33.585[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:54:33.586[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:54:33.587[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:54:33.587[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 2
+[36m2023/07/23 15:54:33.587[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > is 
+[36m2023/07/23 15:54:33.588[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:54:33.588[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:54:33.589[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:54:33.589[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 3
+[36m2023/07/23 15:54:33.589[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Message!
+[36m2023/07/23 15:54:33.589[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:54:33.590[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:54:33.590[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:54:33.590[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 4
+[36m2023/07/23 15:54:33.590[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > !CLOSE
+[36m2023/07/23 15:54:33.591[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 15:54:33.591[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 6
+[36m2023/07/23 15:54:33.592[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > 완료
+[36m2023/07/23 15:54:33.592[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 5
+[36m2023/07/23 15:54:33.592[m [33m[WARN ][m [io.netty.channel.DefaultChannelPipeline] [33m[nioEventLoopGroup-2-1][m - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 4
+	at dev.retrotv.protector.client.netty.NettyClientHandler.sendMsg(NettyClientHandler.java:75) ~[main/:?]
+	at dev.retrotv.protector.client.netty.NettyClientHandler.channelRead(NettyClientHandler.java:56) ~[main/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.94.Final.jar:4.1.94.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[36m2023/07/23 15:54:33.598[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:10:46.049[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:10:46.063[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료
+[36m2023/07/23 16:11:04.694[m [34m[DEBUG][m [io.netty.util.internal.logging.InternalLoggerFactory] [33m[Test worker][m - Using Log4J2 as the default logging framework
+[36m2023/07/23 16:11:04.700[m [34m[DEBUG][m [io.netty.channel.MultithreadEventLoopGroup] [33m[Test worker][m - -Dio.netty.eventLoopThreads: 16
+[36m2023/07/23 16:11:04.703[m [34m[DEBUG][m [io.netty.util.concurrent.GlobalEventExecutor] [33m[Test worker][m - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[36m2023/07/23 16:11:04.706[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[36m2023/07/23 16:11:04.706[m [34m[DEBUG][m [io.netty.util.internal.InternalThreadLocalMap] [33m[Test worker][m - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[36m2023/07/23 16:11:04.714[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - -Dio.netty.noUnsafe: false
+[36m2023/07/23 16:11:04.714[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - Java version: 17
+[36m2023/07/23 16:11:04.714[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.theUnsafe: available
+[36m2023/07/23 16:11:04.715[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.copyMemory: available
+[36m2023/07/23 16:11:04.715[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - sun.misc.Unsafe.storeFence: available
+[36m2023/07/23 16:11:04.715[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Buffer.address: available
+[36m2023/07/23 16:11:04.715[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[36m2023/07/23 16:11:04.716[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.Bits.unaligned: available, true
+[36m2023/07/23 16:11:04.716[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @41e77c24
+[36m2023/07/23 16:11:04.717[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent0] [33m[Test worker][m - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[36m2023/07/23 16:11:04.717[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - sun.misc.Unsafe: available
+[36m2023/07/23 16:11:04.717[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - maxDirectMemory: 536870912 bytes (maybe)
+[36m2023/07/23 16:11:04.717[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.tmpdir: /var/folders/fx/d3rxksdd2ydd9lkjnqhyqn440000gn/T (java.io.tmpdir)
+[36m2023/07/23 16:11:04.718[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[36m2023/07/23 16:11:04.718[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - Platform: MacOS
+[36m2023/07/23 16:11:04.718[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.maxDirectMemory: -1 bytes
+[36m2023/07/23 16:11:04.718[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[36m2023/07/23 16:11:04.719[m [34m[DEBUG][m [io.netty.util.internal.CleanerJava9] [33m[Test worker][m - java.nio.ByteBuffer.cleaner(): available
+[36m2023/07/23 16:11:04.719[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent] [33m[Test worker][m - -Dio.netty.noPreferDirect: false
+[36m2023/07/23 16:11:04.719[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.noKeySetOptimization: false
+[36m2023/07/23 16:11:04.719[m [34m[DEBUG][m [io.netty.channel.nio.NioEventLoop] [33m[Test worker][m - -Dio.netty.selectorAutoRebuildThreshold: 512
+[36m2023/07/23 16:11:04.722[m [34m[DEBUG][m [io.netty.util.internal.PlatformDependent$Mpsc] [33m[Test worker][m - org.jctools-core.MpscChunkedArrayQueue: available
+[36m2023/07/23 16:11:04.724[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty address: 127.0.0.1
+[36m2023/07/23 16:11:04.724[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Netty port: 8888
+[36m2023/07/23 16:11:04.725[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Message size: 4
+[36m2023/07/23 16:11:04.729[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClient] [33m[Test worker][m - Bootstrap 생성
+[36m2023/07/23 16:11:04.733[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.processId: 10891 (auto-detected)
+[36m2023/07/23 16:11:04.735[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv4Stack: false
+[36m2023/07/23 16:11:04.735[m [34m[DEBUG][m [io.netty.util.NetUtil] [33m[Test worker][m - -Djava.net.preferIPv6Addresses: false
+[36m2023/07/23 16:11:04.738[m [34m[DEBUG][m [io.netty.util.NetUtilInitializations] [33m[Test worker][m - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[36m2023/07/23 16:11:04.738[m [34m[DEBUG][m [io.netty.util.NetUtil$SoMaxConnAction] [33m[Test worker][m - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[36m2023/07/23 16:11:04.739[m [34m[DEBUG][m [io.netty.channel.DefaultChannelId] [33m[Test worker][m - -Dio.netty.machineId: 1c:57:dc:ff:fe:70:c0:68 (auto-detected)
+[36m2023/07/23 16:11:04.743[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.level: simple
+[36m2023/07/23 16:11:04.743[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetector] [33m[Test worker][m - -Dio.netty.leakDetection.targetRecords: 4
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numHeapArenas: 16
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.numDirectArenas: 16
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.pageSize: 8192
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxOrder: 9
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.chunkSize: 4194304
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.smallCacheSize: 256
+[36m2023/07/23 16:11:04.751[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.normalCacheSize: 64
+[36m2023/07/23 16:11:04.752[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[36m2023/07/23 16:11:04.752[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimInterval: 8192
+[36m2023/07/23 16:11:04.752[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[36m2023/07/23 16:11:04.752[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.useCacheForAllThreads: false
+[36m2023/07/23 16:11:04.752[m [34m[DEBUG][m [io.netty.buffer.PooledByteBufAllocator] [33m[Test worker][m - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[36m2023/07/23 16:11:04.756[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.allocator.type: pooled
+[36m2023/07/23 16:11:04.756[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.threadLocalDirectBufferSize: 0
+[36m2023/07/23 16:11:04.757[m [34m[DEBUG][m [io.netty.buffer.ByteBufUtil] [33m[Test worker][m - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[36m2023/07/23 16:11:04.762[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 등록
+[36m2023/07/23 16:11:04.763[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 접속 완료
+[36m2023/07/23 16:11:04.766[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkAccessible: true
+[36m2023/07/23 16:11:04.766[m [34m[DEBUG][m [io.netty.buffer.AbstractByteBuf] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.buffer.checkBounds: true
+[36m2023/07/23 16:11:04.767[m [34m[DEBUG][m [io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory] [33m[nioEventLoopGroup-2-1][m - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6d5bfc35
+[36m2023/07/23 16:11:04.769[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[36m2023/07/23 16:11:04.769[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.ratio: 8
+[36m2023/07/23 16:11:04.769[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.chunkSize: 32
+[36m2023/07/23 16:11:04.769[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.blocking: false
+[36m2023/07/23 16:11:04.770[m [34m[DEBUG][m [io.netty.util.Recycler] [33m[nioEventLoopGroup-2-1][m - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[36m2023/07/23 16:11:04.774[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Hello! 
+[36m2023/07/23 16:11:04.785[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 8
+[36m2023/07/23 16:11:04.785[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > !SUCCESS
+[36m2023/07/23 16:11:04.785[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 1
+[36m2023/07/23 16:11:04.786[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > This 
+[36m2023/07/23 16:11:04.786[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:11:04.787[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 8
+[36m2023/07/23 16:11:04.787[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > !SUCCESS
+[36m2023/07/23 16:11:04.787[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 2
+[36m2023/07/23 16:11:04.787[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > is 
+[36m2023/07/23 16:11:04.788[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:11:04.788[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 8
+[36m2023/07/23 16:11:04.789[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > !SUCCESS
+[36m2023/07/23 16:11:04.789[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 3
+[36m2023/07/23 16:11:04.789[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > Message!
+[36m2023/07/23 16:11:04.789[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:11:04.790[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msg size: 8
+[36m2023/07/23 16:11:04.790[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 수신된 메시지 > !SUCCESS
+[36m2023/07/23 16:11:04.790[m [34m[DEBUG][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - msgArr size: 4, idx: 4
+[36m2023/07/23 16:11:04.790[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 발송 메시지 > !CLOSE
+[36m2023/07/23 16:11:04.790[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:11:04.791[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 메시지 수신 완료
+[36m2023/07/23 16:11:04.792[m [32m[INFO ][m [dev.retrotv.protector.client.netty.NettyClientHandler] [33m[nioEventLoopGroup-2-1][m - 채널 연결 종료

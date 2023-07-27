@@ -1,5 +1,6 @@
 package dev.retrotv.protector.client.netty;
 
+import dev.retrotv.protector.client.ProtectorClient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.DisplayName;
@@ -7,12 +8,10 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 import java.net.Socket;
-import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 
 class SocketTest {
-    private static final Logger log = LogManager.getLogger(NettyClient.class);
+    private static final Logger log = LogManager.getLogger(ProtectorClient.class);
 
     @Test
     @DisplayName("Socket 연결하고 데이터 보내기")

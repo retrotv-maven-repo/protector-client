@@ -1,4 +1,4 @@
-package dev.retrotv.protector.client.netty;
+package dev.retrotv.protector.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -9,13 +9,13 @@ import org.apache.logging.log4j.Logger;
 
 import java.nio.charset.StandardCharsets;
 
-public class NettyClientHandler extends ChannelInboundHandlerAdapter {
-    private static final Logger log = LogManager.getLogger(NettyClientHandler.class);
+public class ProtectorClientHandler extends ChannelInboundHandlerAdapter {
+    private static final Logger log = LogManager.getLogger(ProtectorClientHandler.class);
 
     private final String msg;
     private int idx = 0;
 
-    public NettyClientHandler(String msg) {
+    public ProtectorClientHandler(String msg) {
         this.msg = msg;
     }
 

@@ -1,0 +1,21 @@
+name: Release Tag
+on:
+  push:
+    branches:
+      - deploy
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 버전 정보 추출
+        run: chmod +x ${{github.workspace}}/gradlew
+      - run: echo "VERSION_INFORMATION=$(${{github.workspace}}/gradlew -q printVersionName)" >> $GITHUB_ENV
+        id: extract_version_name
+      - name: Release 생성
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION_INFORMATION }}
+          release_name: ${{ env.VERSION_INFORMATION }}

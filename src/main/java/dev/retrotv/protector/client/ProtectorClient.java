@@ -88,4 +88,8 @@ public class ProtectorClient {
         in.close();
         socket.close();
     }
+
+    private String dataPadding(String data) {
+        return "!DATASTART " + data + " !DATAEND";
+    }
 }

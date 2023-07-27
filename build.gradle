@@ -3,7 +3,25 @@ plugins {
 }
 
 group = 'dev.retrotv'
-version = '0.0.1'
+version = '0.0.1-alpha'
+
+// Github Action 버전 출력용
+tasks.register('printVersionName') {
+    println project.version
+}
+
+// Windows PowerShell에서 Gradle 실행 시, 한글 깨짐 해결을 위한 코드
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+javadoc {
+    source = sourceSets.main.java.srcDirs
+    options.addStringOption("locale","ko_KR")
+    options.addStringOption("encoding","UTF-8")
+    options.addStringOption("charset","UTF-8")
+    options.addStringOption("docencoding","UTF-8")
+}
 
 repositories {
     mavenCentral()

@@ -10,6 +10,9 @@ import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class SocketTest {
     private static final Logger log = LogManager.getLogger(ProtectorClient.class);
 
@@ -54,5 +57,33 @@ class SocketTest {
             in.close();
             out.close();
         }
+    }
+
+    @Test
+    @DisplayName("ProtectClient 테스트")
+    void test_protect_client() throws Exception {
+        ProtectorClient pc = new ProtectorClient("127.0.0.1", 8888);
+
+        pc.run();
+        String message = "NewData";
+        String encryptedData = pc.encrypt(message);
+        String originalMessage = pc.decrypt(encryptedData);
+        pc.close();
+
+        assertEquals(message, originalMessage);
+    }
+
+    @Test
+    @DisplayName("ProtectClient 패스워드 암호화 테스트")
+    void test_protect_password_client() throws Exception {
+        ProtectorClient pc = new ProtectorClient("127.0.0.1", 8888);
+
+        pc.run();
+        String password = "password";
+        String encryptedPassword = pc.passwordEncrypt(password);
+        boolean result = pc.passwordMatch(password, encryptedPassword);
+        pc.close();
+
+        assertTrue(result);
     }
 }

@@ -11,6 +11,17 @@ import java.nio.charset.StandardCharsets;
 public class ProtectorClient {
     private static final Logger log = LogManager.getLogger(ProtectorClient.class);
 
+    private static final String SUCCESS = "!SUCCESS";
+    private static final String CLOSE = "!CLOSE";
+
+    // 하위 문자열 상수들은 공백이 포함되어 있음!
+    private static final String DATA_START = "!DATASTART ";
+    private static final String DATA_END = " !DATAEND";
+    private static final String ENCRYPT = "!ENCRYPT ";
+    private static final String DECRYPT = "!DECRYPT ";
+    private static final String PASSWORD = "!PASSWORD ";
+    private static final String PASSWORD_MATCH = "!PASSWORDMATCH ";
+
     private final String address;
     private final int port;
 
@@ -37,10 +48,10 @@ public class ProtectorClient {
     }
 
     public String encrypt(String data) throws IOException {
-        out.write("!ENCRYPT " + dataPadding(data));
+        out.write(ENCRYPT + dataPadding(data));
         out.flush();
 
-        if ("!SUCCESS".equals(in.readLine())) {
+        if (SUCCESS.equals(in.readLine())) {
             return in.readLine();
         } else {
             throw new IOException();
@@ -48,10 +59,10 @@ public class ProtectorClient {
     }
 
     public String decrypt(String encryptedData) throws IOException {
-        out.write("!DECRYPT " + dataPadding(encryptedData));
+        out.write(DECRYPT + dataPadding(encryptedData));
         out.flush();
 
-        if ("!SUCCESS".equals(in.readLine())) {
+        if (SUCCESS.equals(in.readLine())) {
             return in.readLine();
         } else {
             throw new IOException();
@@ -59,10 +70,10 @@ public class ProtectorClient {
     }
 
     public String passwordEncrypt(String password) throws IOException {
-        out.write("!PASSWORD " + dataPadding(password));
+        out.write(PASSWORD + dataPadding(password));
         out.flush();
 
-        if ("!SUCCESS".equals(in.readLine())) {
+        if (SUCCESS.equals(in.readLine())) {
             return in.readLine();
         } else {
             throw new IOException();
@@ -70,10 +81,10 @@ public class ProtectorClient {
     }
 
     public boolean passwordMatch(String password, String encryptedPassword) throws IOException {
-        out.write("!PASSWORDMATCH " + dataPadding(password) + " " + dataPadding(encryptedPassword));
+        out.write(PASSWORD_MATCH + dataPadding(password) + " " + dataPadding(encryptedPassword));
         out.flush();
 
-        if ("!SUCCESS".equals(in.readLine())) {
+        if (SUCCESS.equals(in.readLine())) {
             return "true".equals(in.readLine());
         } else {
             throw new IOException();
@@ -81,7 +92,7 @@ public class ProtectorClient {
     }
 
     public void close() throws IOException {
-        out.write("!CLOSE");
+        out.write(CLOSE);
         out.flush();
 
         out.close();
@@ -90,6 +101,6 @@ public class ProtectorClient {
     }
 
     private String dataPadding(String data) {
-        return "!DATASTART \"" + data + "\" !DATAEND";
+        return DATA_START + data + DATA_END;
     }
 }

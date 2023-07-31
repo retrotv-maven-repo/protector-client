@@ -37,7 +37,7 @@ public class ProtectorClient {
     }
 
     public String encrypt(String data) throws IOException {
-        out.write("!ENCRYPT " + data);
+        out.write("!ENCRYPT " + dataPadding(data));
         out.flush();
 
         if ("!SUCCESS".equals(in.readLine())) {
@@ -48,7 +48,7 @@ public class ProtectorClient {
     }
 
     public String decrypt(String encryptedData) throws IOException {
-        out.write("!DECRYPT " + encryptedData);
+        out.write("!DECRYPT " + dataPadding(encryptedData));
         out.flush();
 
         if ("!SUCCESS".equals(in.readLine())) {
@@ -59,7 +59,7 @@ public class ProtectorClient {
     }
 
     public String passwordEncrypt(String password) throws IOException {
-        out.write("!PASSWORD " + password);
+        out.write("!PASSWORD " + dataPadding(password));
         out.flush();
 
         if ("!SUCCESS".equals(in.readLine())) {
@@ -70,7 +70,7 @@ public class ProtectorClient {
     }
 
     public boolean passwordMatch(String password, String encryptedPassword) throws IOException {
-        out.write("!PASSWORDMATCH " + password + " " + encryptedPassword);
+        out.write("!PASSWORDMATCH " + dataPadding(password) + " " + dataPadding(encryptedPassword));
         out.flush();
 
         if ("!SUCCESS".equals(in.readLine())) {
